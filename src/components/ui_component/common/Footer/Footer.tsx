@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-teal-600 ">
               <Image
-                src="https://i.ibb.co/xzg7M5N/Thyrocare.webp"
+                src="https://res.cloudinary.com/dlmmd8a0k/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1734459083/ldhygdtsxehk5hgpcwm4.jpg"
                 alt="Thyrocare Image"
                 layout="responsive"
                 width={400}
