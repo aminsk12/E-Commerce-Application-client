@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Mart
 
-## Getting Started
+Next Mart is a comprehensive e-commerce platform designed to provide a seamless online shopping experience for users, vendors, and administrators. It features advanced functionalities such as product browsing, vendor shop management, secure checkout, and robust admin controls to create a scalable and high-performance system.
 
-First, run the development server:
+## Live URL
+- **Frontend**: [Frontend Live URL](https://nextmart-blue.vercel.app)
+- **Backend**: [Backend Live URL](https://nextmartserver.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack & Packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Backend**
+- **Server**: Node.js with Express.js
+- **Language**: TypeScript
+- **Database**: PostgreSQL with Prisma
+- **Authentication**: JSON Web Tokens (JWT)
+- **File Uploads**: Cloudinary (for image storage)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Frontend**
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS and shadcn/ui
 
-## Learn More
+### **Packages**
+- `bcrypt`: Password hashing
+- `jsonwebtoken`: For JWT-based authentication
+- `cors`: Cross-Origin Resource Sharing
+- `prisma`: ORM for PostgreSQL
+- `amarPay`: Payment integration
+- `sonner`: Notifications
+- `react-query`: Data fetching and caching
+- `react-hook-form`: Form handling and validation
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features & Functionality
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **Admin**
+- Manage **Users**, **Vendors**, and **Shops** with advanced controls.
+- Dynamically control **Product Categories** for flexibility.
+- Monitor **Transactions** and **Platform Activity** for insights.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Vendor**
+- Create and manage **Shops** effortlessly.
+- Add, edit, and **Duplicate Products** with detailed inventory controls.
+- View and respond to **Customer Reviews**.
+- Access **Order History** specific to their shop for tracking and analysis.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### **User (Customer)**
+- **Browse and Filter Products** to find what you need quickly.
+- Compare products within the same category.
+- Manage a **Cart** with **Vendor-Specific Restrictions** to avoid conflicts.
+- Checkout using **Coupon Codes** and enjoy secure payment methods.
+- Access **Order History** and leave reviews for purchased items.
+
+## Installation
+
+To run the project locally, follow these steps:
+1. **Clone the Repository**:
+   ```bash
+   cd NextBuy-client
+   https://github.com/Abir-7/NextBuy-client
+   run npm install
+2. **Create .env.local**:
+   ```bash
+      NEXT_PUBLIC_CLOUDINARY_PRESET=
+   NEXT_PUBLIC_CLOUDINARY_CLOUDNAME=
+      NEXT_PUBLIC_API_URL=
+
+  1. **Clone the Repository(backend)**:
+   ```bash
+   cd NextBuy-client
+   https://github.com/Abir-7/NextBuy-server
+   run npm install
+2. **Create .env**:
+   ```bash
+      DATABASE_URL=
+      NODE_ENV=
+      PORT=
+      SALTROUNDS=
+   JWT_ACCESS_SECRET=
+      JWT_ACCESS_EXPIRES_IN=
+      # amar pay
+      Store_ID=
+      Signature_Key=
+      Api_EndPoint=
+   EMAIL_PASS=EMAIL_USER=
+
